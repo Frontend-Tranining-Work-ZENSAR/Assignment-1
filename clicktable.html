@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: crimson;
+        }
+        table{
+            border-collapse: collapse;
+            margin:20px;
+            color:wheat;
+            font-size: 20px;
+        }
+        td,th{
+            border: 1px solid white;
+        }
+        .sr{
+            width : 50px;
+        }
+        .name{
+            width:150 px;
+        }
+        .sal{
+            width:100px;
+        }
+        #INR, #EUR, #USD{
+            display:none;
+        }
+        #report{
+            color: white;
+            margin: 20px 5px;
+        }
+    </style>
+
+</head>
+    <body>
+ <div class ="btndiv">
+     <button onclick="inrreport()">Report in INR</button>
+     <button onclick="eurreport()">Report in EUR</button>
+     <button onclick="usdreport()">Report in USD</button>
+ </div>  
+ 
+ <div id="report"></div>
+ 
+
+<table id="INR">
+    <tr>
+        <th class="sr">Sr.No.</th>
+        <th class="name">Employee Name</th>
+        <th class="sal">Salary</th>
+    </tr>
+
+    <tr>
+            <td>1</td>
+            <td>Employee 1</td>
+            <td>&#8377 28000</td>
+    </tr>
+
+    <tr>
+            <td>2</td>
+            <td>Employee2</td>
+            <td>&#8377 40000</td>
+    </tr>
+            
+    <tr>
+            <td>3</td>
+            <td>Employee3</td>
+            <td>&#8377 35000</td>
+    </tr>
+    </table>
+
+<table id="EUR">
+    <tr>
+        <th class="sr">Sr.No.</th>
+        <th class="name">Employee Name</th>
+        <th class="sal">Salary</th>
+    </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Employee1</td>
+            <td>&#8364 1000</td>
+            </tr>
+
+            <tr>
+            <td>2</td>
+            <td>Employee2</td>
+            <td>&#8364 450</td>
+            </tr>
+            
+            <tr>
+            <td>3</td>
+            <td>Employee3</td>
+            <td>&#8364 670</td>
+            </tr>
+    </table>
+
+    <table id="USD">
+    <tr>
+        <th class="sr">Sr.No.</th>
+        <th class="name">Employee Name</th>
+        <th class="sal">Salary</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Employee1</td>
+            <td>&#36 25</td>
+            </tr>
+
+            <tr>
+            <td>2</td>
+            <td>Employee2</td>
+            <td>&#36 45</td>
+            </tr>
+            
+            <tr>
+            <td>3</td>
+            <td>Employee3</td>
+            <td>&#36 500</td>
+            </tr>
+    </table>
+
+    <script>
+        function inrreport(){
+            document.getElementById("report").innerHTML="Report in INR";
+
+            document.getElementById("INR").style.display="block";
+
+            document.getElementById("EUR").style.display="none";
+            document.getElementById("USD").style.display="none";
+        }
+        
+        function eurreport(){
+            document.getElementById("report").innerHTML="Report in EUR";
+
+            document.getElementById("EUR").style.display="block";
+
+            document.getElementById("INR").style.display="none";
+            document.getElementById("USD").style.display="none";
+        }
+        function usdreport(){
+            document.getElementById("report").innerHTML="Report in USD";
+
+            document.getElementById("USD").style.display="block";
+
+            document.getElementById("INR").style.display="none";
+            document.getElementById("EUR").style.display="none";
+        }
+        </script>
+</body>
+</html>        
+

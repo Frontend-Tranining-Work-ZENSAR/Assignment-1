@@ -1,0 +1,34 @@
+body{
+    margin: 0; padding: 0;
+}
+wrap 
+{
+    width: 980px;
+    margin: 0 auto;
+}
+.header
+{
+    height: 140px;
+    margin-bottom: 15px;
+    background-color: coral;
+}
+.content
+{
+    width: 690px;
+    height: 450px;
+    background-color: grey;
+    float: right;
+}
+.sidebar
+{
+    width: 275px;
+    height: 450px;
+    background-color: rgb(218, 16, 16);
+    float: left;
+}
+.footer
+{
+    height: 150px;
+    margin-top:60px;
+    background-color: lightgreen;
+}

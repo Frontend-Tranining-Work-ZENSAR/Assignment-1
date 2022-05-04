@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="mycanvas" width="200" height="100" style="border: black;">This support Canvas 
+        </canvas>
+        <script>
+            var x=document.getElementById("mycanvas");
+            var ctrl = x.getContext("2d");
+            ctrl.font="30px Arial";
+            ctrl.fillText("Hello World",10,50);
+        </script>
+        <svg width="200" height ="300">
+            circle cx="50" cy="50" r="40" stroke="orenge" stroke-width="4"fill="green"/>
+        </svg>
+        <svg width="400" height="300">
+            <rect width ="400" height="200" style="fill: cadetblue;stroke-width: 10;stroke-height:5 ;"></rect>
+        </svg>
+    </body>
+</html>

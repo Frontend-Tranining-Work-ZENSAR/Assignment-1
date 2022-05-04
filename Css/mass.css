@@ -1,0 +1,36 @@
+body
+{
+    background-color: rgb(224, 151, 68);
+}
+
+table
+{
+    font-style: italic;
+}
+table,th,td {
+    border: 2px solid black;
+    border-collapse: collapse ;
+}
+th,td 
+{
+    padding: 5px;
+    text-align: center;
+}
+div{
+    border: 2px solid black;
+    background-color: gray;
+    text-align: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    font-size: 20px;
+}
+.toc
+{
+    background-color: rgb(143, 212, 209);
+    color: rgb(243, 16, 16);
+    margin: 30px;
+    padding: 30px;
+}
+{
+    box-sizing :border-box;
+}
